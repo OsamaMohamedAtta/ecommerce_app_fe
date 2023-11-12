@@ -1,0 +1,194 @@
+.profile-loader {
+    margin-top: 10rem;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #e36429;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.profile-error {
+    margin-top: 10rem;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.profile-section img {
+    width: 120px;
+    height: 115px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.profile-section p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(32, 32, 32);
+}
+
+.profile-section p+p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(73, 73, 73);
+}
+
+.profile-section span {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(128, 128, 128);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.user-setting {
+    width: 300px;
+    padding: 0px 15px;
+    margin-top: 15px;
+}
+
+.user-setting p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    margin-right: 8px;
+}
+
+.user-setting i {
+    font-size: 0.9rem;
+    padding: 5px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 5px;
+    color: #e36429;
+}
+
+.user-setting i:nth-child(2) {
+    background-color: transparent;
+    color: rgb(61, 61, 61);
+    font-size: 1.2rem;
+}
+
+.profile-img {
+    position: relative;
+}
+
+.profile-img i {
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #e36429;
+    cursor: pointer;
+}
+
+.profile-popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    z-index: 9999999;
+}
+
+.inside-popup {
+    background-color: #fff;
+    padding: 30px 60px;
+    width: 220px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.inside-popup p:nth-child(2) {
+    font-size: 1.1rem;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.inside-popup p:nth-child(3) {
+    font-size: 1.1rem;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 10px 15px;
+    background-color: rgb(216, 176, 176);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inside-popup i{
+    padding: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #e36429;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.inside-popup img{
+    width: 120px;
+    height: 115px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.inside-popup input {
+    display: none;
+}
+
+.inside-popup label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #e36429;
+    cursor: pointer;
+}
+
+.inside-popup button {
+    padding: 10px 30px;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bold;
+    border: 0px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.loading-upload-pic{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 15px;
+    background: rgba(255, 254, 254, 0.6);
+}
+
+.loading-upload-pic span{
+   margin-top: 0px;
+}
